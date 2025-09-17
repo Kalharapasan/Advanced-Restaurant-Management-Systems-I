@@ -142,15 +142,15 @@ btn4 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold')
 btn5 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="5", bg="powder blue").grid(row=3, column=1)
 btn6 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="6", bg="powder blue").grid(row=3, column=2)
 btnSub = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="-", bg="powder blue").grid(row=3, column=3)
+#====================Calculator Buttons====================
 btn1 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="1", bg="powder blue").grid(row=4, column=0)
 btn2 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="2", bg="powder blue").grid(row=4, column=1)
 btn3 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="3", bg="powder blue").grid(row=4, column=2)
 btnMulti = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="*", bg="powder blue").grid(row=4, column=3)
+#====================Calculator Buttons====================
 btn0 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="0", bg="powder blue").grid(row=5, column=0)
 btnClear = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="C", bg="powder blue").grid(row=5, column=1)
 btnEquals = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="=", bg="powder blue").grid(row=5, column=2)
 btnDiv = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="/", bg="powder blue").grid(row=5, column=3)
-
-
 
 root.mainloop()

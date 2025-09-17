@@ -123,6 +123,7 @@ txtReceipt.grid(row=0, column=0)
 #====================Buttons====================
 btnTotal = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="Total", bg="powder blue").grid(row=0, column=0)
 btnReceipt = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="Receipt", bg="powder blue").grid(row=0, column=1)
-btnReset = Button(Buttons_F, padx=16
+btnReset = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="Reset", bg="powder blue").grid(row=0, column=2)
+btnExit = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="Exit", bg="powder blue").grid(row=0, column=3)
 
 root.mainloop()

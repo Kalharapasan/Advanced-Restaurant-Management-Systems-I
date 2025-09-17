@@ -200,8 +200,28 @@ def CostofItem():
     Item15=float(E_Carlton_Hill_Chocolate_Cake.get())
     Item16=float(E_Queen_Park_Chocolate_Cake.get())
 
-    
-    
+    PriceofDrinks = (Item1 * 1.2) + (Item2 * 1.99) + (Item3 * 2.05) + \
+                (Item4 * 1.89) + (Item5 * 1.99) + (Item6 * 2.99) + (Item7 * 2.39) + (Item8 * 1.29)
+
+    PriceofCakes = (Item9 * 1.35) + (Item10 * 2.2) + (Item11 * 1.99) + \
+                (Item12 * 1.49) + (Item13 * 1.8) + (Item14 * 1.67) + (Item15 * 1.6) + (Item16 * 1.99)
+
+    DrinksPrice="£", str('%.2f' % (PriceofDrinks))
+    CakesPrice="£", str('%.2f' % (PriceofCakes))
+    CostofCakes.set(CakesPrice)
+    CostofDrinks.set(DrinksPrice)
+    SC="£", str('%.2f' % (1.59))
+    ServiceCharge.set(SC)
+
+    SubTotalofITEMS ="£", str('%.2f' % (PriceofDrinks + PriceofCakes + 1.59))
+    SubTotal.set(SubTotalofITEMS)
+
+    Tax="£", str('%.2f' % ((PriceofDrinks + PriceofCakes + 1.59)*0.15))
+    PaidTax.set(Tax)
+    TT = ((PriceofDrinks + PriceofCakes + 1.59)*0.15)
+    TC ="£", str('%.2f' % (PriceofDrinks + PriceofCakes + 1.59 + TT))
+    TotalCost.set(TC)
+        
 
 #==================== Drinks ====================
 Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=0, sticky=W)

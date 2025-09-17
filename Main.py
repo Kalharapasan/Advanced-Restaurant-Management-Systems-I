@@ -43,6 +43,7 @@ Drinks_F.pack(side=LEFT)
 Cake_F=Frame(MenuFrame, bg='Powder Blue', bd=10, relief=RIDGE)
 Cake_F.pack(side=RIGHT)
 
+#====================Variable====================
 var1=IntVar()
 var2=IntVar()
 var3=IntVar()
@@ -59,6 +60,15 @@ var13=IntVar()
 var14=IntVar()
 var15=IntVar()
 var16=IntVar()
+
+DateofOrder=StringVar()
+Receipt_Ref=StringVar()
+PaidTax=StringVar()
+SubTotal=StringVar()
+TotalCost=StringVar()
+CostofCakes=StringVar()
+CostofDrinks=StringVar()
+ServiceCharge=StringVar()
 
 #==================== Drinks ====================
 Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=0, sticky=W)

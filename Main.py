@@ -294,7 +294,24 @@ def chkIced_Cappuccino():
     elif var8.get() == 0:
         txtIced_Cappuccino.configure(state= DISABLED)
         E_Iced_Cappuccino.set("0")
+
+def chkSchool_Cake():
+    if (var9.get() == 1):
+        txtSchool_Cake.configure(state= NORMAL)
+        txtSchool_Cake.delete(0,END)
+        txtSchool_Cake.focus()
+    elif var9.get() == 0:
+        txtSchool_Cake.configure(state= DISABLED)
+        E_School_Cake.set("0")
         
+def chkSunny_AO_Cake():
+    if (var10.get() == 1):
+        txtSunny_AO_Cake.configure(state= NORMAL)
+        txtSunny_AO_Cake.delete(0,END)
+        txtSunny_AO_Cake.focus()
+    elif var10.get() == 0:
+        txtSunny_AO_Cake.configure(state= DISABLED)
+        E_Sunny_AO_Cake.set("0")
 
 
 #==================== Drinks ====================

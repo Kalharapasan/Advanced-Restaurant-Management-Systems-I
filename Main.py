@@ -12,7 +12,8 @@ root.configure(background = 'Cadet Blue')
 Tops = Frame(root, bg='Cadet Blue', bd=20, pady=5, relief=RIDGE)
 Tops.pack(side=TOP)
 
-lblTitle = Label(Tops, font=('arial', 60, 'bold'), text="Restaurant Management Systems", bd=21, bg='Cadet Blue', fg='Cornsilk', justify=CENTER)
+lblTitle = Label(Tops, font=('arial', 60, 'bold'), text="Restaurant Management Systems", 
+                 bd=21, bg='Cadet Blue', fg='Cornsilk', justify=CENTER)
 lblTitle.grid(row=0, column=0)
 
 ReceiptCal_F = Frame(root, bg='Powder Blue', bd=10, relief=RIDGE)
@@ -43,8 +44,25 @@ Cake_F=Frame(MenuFrame, bg='Powder Blue', bd=10, relief=RIDGE)
 Cake_F.pack(side=RIGHT)
 
 var1=IntVar()
+var2=IntVar()
+var3=IntVar()
+var4=IntVar()
+var5=IntVar()
+var6=IntVar()
+var7=IntVar()
+var8=IntVar()
+var9=IntVar()
+var10=IntVar()
+var11=IntVar()
+var12=IntVar()
+var13=IntVar()
+var14=IntVar()
+var15=IntVar()
+var16=IntVar()
 
-Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=0, sticky=W)
+Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, 
+                    font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=0, sticky=W)
+
 
 
 root.mainloop()

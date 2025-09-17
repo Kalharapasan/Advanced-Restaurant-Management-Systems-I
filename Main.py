@@ -69,6 +69,14 @@ African_Coffee = Checkbutton(Drinks_F, text="African Coffee", variable=var6, onv
 American_Coffee = Checkbutton(Drinks_F, text="American Coffee", variable=var7, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=6, sticky=W)
 Iced_Cappuccino = Checkbutton(Drinks_F, text="Iced Cappuccino", variable=var8, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=7, sticky=W)
 
-
+#==================== Cakes ====================
+SchoolCake = Checkbutton(Cake_F, text="School Cake\t\t", variable=var9, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=0, sticky=W)
+Sunny_AO_Cake = Checkbutton(Cake_F, text="Sunday O Cake ", variable=var10, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=1, sticky=W)
+Jonathan_YO_Cake = Checkbutton(Cake_F, text="Jonathan O Cake ", variable=var11, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=2, sticky=W)
+West_African_Cake = Checkbutton(Cake_F, text="West African Cake ", variable=var12, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=3, sticky=W)
+Lagos_Chocolate_Cake = Checkbutton(Cake_F, text="Lagos Chocolate Cake", variable=var13, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=4, sticky=W)
+Kilburn_Chocolate_Cake = Checkbutton(Cake_F, text="Kilburn Chocolate Cake", variable=var14, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=5, sticky=W)
+Carlton_Hill_Cake = Checkbutton(Cake_F, text="Carlton Hill Chocolate Cake", variable=var15, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=6, sticky=W)
+Queen_Park_Cake = Checkbutton(Cake_F, text="Queen's Park Chocolate Cake", variable=var16, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=7, sticky=W)
 
 root.mainloop()

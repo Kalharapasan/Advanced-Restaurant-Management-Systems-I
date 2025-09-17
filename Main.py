@@ -70,6 +70,11 @@ CostofCakes=StringVar()
 CostofDrinks=StringVar()
 ServiceCharge=StringVar()
 
+text_Input = StringVar()
+operator = ""
+
+
+
 E_Latta=StringVar()
 E_Espresso=StringVar()
 E_Iced_Latta=StringVar()

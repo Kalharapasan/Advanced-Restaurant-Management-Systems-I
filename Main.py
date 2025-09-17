@@ -126,4 +126,9 @@ btnReceipt = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 
 btnReset = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="Reset", bg="powder blue").grid(row=0, column=2)
 btnExit = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="Exit", bg="powder blue").grid(row=0, column=3)
 
+#====================Calculator Display====================
+txtDisplay = Entry(Cal_F, width=45, bg="white", bd=4,font=('arial', 12, 'bold'), justify=RIGHT)
+txtDisplay.grid(row=0, column=0, columnspan=4, pady=1)
+txtDisplay.insert(0, "0")
+
 root.mainloop()

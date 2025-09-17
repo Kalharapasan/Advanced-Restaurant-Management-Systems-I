@@ -221,7 +221,16 @@ def CostofItem():
     TT = ((PriceofDrinks + PriceofCakes + 1.59)*0.15)
     TC ="£", str('%.2f' % (PriceofDrinks + PriceofCakes + 1.59 + TT))
     TotalCost.set(TC)
-        
+
+def chkLatta():
+    if (var1.get() == 1):
+        txtLatta.configure(state = NORMAL)
+        txtLatta.focus()
+        txtLatta.delete('0', END)
+        E_Latta.set("")
+    elif(var1.get() == 0):
+        txtLatta.configure(state = DISABLED)
+        E_Latta.set("0")
 
 #==================== Drinks ====================
 Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=0, sticky=W)

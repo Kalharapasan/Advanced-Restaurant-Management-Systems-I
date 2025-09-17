@@ -222,23 +222,21 @@ Kilburn_Chocolate_Cake = Checkbutton(Cake_F, text="Kilburn Chocolate Cake", vari
 Carlton_Hill_Cake = Checkbutton(Cake_F, text="Carlton Hill Chocolate Cake", variable=var15, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=6, sticky=W)
 Queen_Park_Cake = Checkbutton(Cake_F, text="Queen's Park Chocolate Cake", variable=var16, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=7, sticky=W)
 
-#==================== Entry Box for Cakes====================
-txtSchool_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+#====================Entry Box for Cakes====================
+txtSchool_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_School_Cake)
 txtSchool_Cake.grid(row=0,column=1)
-txtSunny_AO_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtSunny_AO_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Sunny_AO_Cake)
 txtSunny_AO_Cake.grid(row=1,column=1)
-txtJonathan_YO_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtJonathan_YO_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Jonathan_YO_Cake)
 txtJonathan_YO_Cake.grid(row=2,column=1)
-txtWest_African_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtWest_African_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_West_African_Cake)
 txtWest_African_Cake.grid(row=3,column=1)
-txtLagos_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtLagos_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Lagos_Chocolate_Cake)
 txtLagos_Chocolate_Cake.grid(row=4,column=1)
-txtKilburn_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtKilburn_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Kilburn_Chocolate_Cake)
 txtKilburn_Chocolate_Cake.grid(row=5,column=1)
-txtCarlton_Hill_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtCarlton_Hill_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Carlton_Hill_Chocolate_Cake)
 txtCarlton_Hill_Chocolate_Cake.grid(row=6,column=1)
-txtQueen_Park_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
-txtQueen_Park_Chocolate_Cake.grid(row=7,column=1)
 
 #====================Totals Cost====================
 lblCostofDrinks = Label(Cost_F,font=('arial', 14, 'bold'), text="Cost Of Drinks\t", bg="powder blue",fg="black",)

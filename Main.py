@@ -131,4 +131,22 @@ txtDisplay = Entry(Cal_F, width=45, bg="white", bd=4,font=('arial', 12, 'bold'),
 txtDisplay.grid(row=0, column=0, columnspan=4, pady=1)
 txtDisplay.insert(0, "0")
 
+#====================Calculator Buttons====================
+btn7 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="7", bg="powder blue").grid(row=2, column=0)
+btn8 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="8", bg="powder blue").grid(row=2, column=1)
+btn9 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="9", bg="powder blue").grid(row=2, column=2)
+btnadd = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="+", bg="powder blue").grid(row=2, column=3)
+
+#====================Calculator Buttons====================
+btn7 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="7", bg="powder blue").grid(row=3, column=0)
+btn8 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="8", bg="powder blue").grid(row=3, column=1)
+btn9 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="9", bg="powder blue").grid(row=3, column=2)
+btnadd = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="+", bg="powder blue").grid(row=3, column=3)
+
+#====================Calculator Buttons====================
+btn7 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="7", bg="powder blue").grid(row=4, column=0)
+btn8 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="8", bg="powder blue").grid(row=4, column=1)
+btn9 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="9", bg="powder blue").grid(row=4, column=2)
+btnadd = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="+", bg="powder blue").grid(row=4, column=3)
+
 root.mainloop()

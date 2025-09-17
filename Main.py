@@ -214,28 +214,6 @@ txtDisplay = Entry(Cal_F, width=45, bg="white", bd=4,font=('arial', 12, 'bold'),
 txtDisplay.grid(row=0, column=0, columnspan=4, pady=1)
 txtDisplay.insert(0, "0")
 
-#====================Calculator Buttons====================
-btn7 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="7", bg="powder blue").grid(row=2, column=0)
-btn8 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="8", bg="powder blue").grid(row=2, column=1)
-btn9 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="9", bg="powder blue").grid(row=2, column=2)
-btnadd = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="+", bg="powder blue").grid(row=2, column=3)
-
-#====================Calculator Buttons====================
-btn4 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="4", bg="powder blue").grid(row=3, column=0)
-btn5 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="5", bg="powder blue").grid(row=3, column=1)
-btn6 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="6", bg="powder blue").grid(row=3, column=2)
-btnSub = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="-", bg="powder blue").grid(row=3, column=3)
-#====================Calculator Buttons====================
-btn1 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="1", bg="powder blue").grid(row=4, column=0)
-btn2 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="2", bg="powder blue").grid(row=4, column=1)
-btn3 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="3", bg="powder blue").grid(row=4, column=2)
-btnMulti = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="*", bg="powder blue").grid(row=4, column=3)
-#====================Calculator Buttons====================
-btn0 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="0", bg="powder blue").grid(row=5, column=0)
-btnClear = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="C", bg="powder blue").grid(row=5, column=1)
-btnEquals = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="=", bg="powder blue").grid(row=5, column=2)
-btnDiv = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="/", bg="powder blue").grid(row=5, column=3)
-
 #====================Calculator Display====================
 def btnClick(numbers):
     global operator
@@ -257,7 +235,11 @@ txtDisplay = Entry(Cal_F, width=45, bg="white", bd=4, font=('arial', 12, 'bold')
 txtDisplay.grid(row=0, column=0, columnspan=4, pady=1)
 txtDisplay.insert(0, "0")
 
-
+#====================Calculator Buttons====================
+btn7 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="7", bg="powder blue", command=lambda:btnClick(7)).grid(row=2, column=0)
+btn8 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="8", bg="powder blue", command=lambda:btnClick(8)).grid(row=2, column=1)
+btn9 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="9", bg="powder blue", command=lambda:btnClick(9)).grid(row=2, column=2)
+btnadd = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="+", bg="powder blue", command=lambda:btnClick("+")).grid(row=2, column=3)
 
 
 root.mainloop()

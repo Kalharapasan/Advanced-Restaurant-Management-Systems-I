@@ -331,6 +331,23 @@ def chkWest_African_Cake():
         txtWest_African_Cake.configure(state= DISABLED)
         E_West_African_Cake.set("0")
 
+def chkLagos_Chocolate_Cake():
+    if (var13.get() == 1):
+        txtLagos_Chocolate_Cake.configure(state= NORMAL)
+        txtLagos_Chocolate_Cake.delete(0,END)
+        txtLagos_Chocolate_Cake.focus()
+    elif var13.get() == 0:
+        txtLagos_Chocolate_Cake.configure(state= DISABLED)
+        E_Lagos_Chocolate_Cake.set("0")
+        
+def chkKilburn_Chocolate_Cake():
+    if (var14.get() == 1):
+        txtKilburn_Chocolate_Cake.configure(state= NORMAL)
+        txtKilburn_Chocolate_Cake.delete(0,END)
+        txtKilburn_Chocolate_Cake.focus()
+    elif var14.get() == 0:
+        txtKilburn_Chocolate_Cake.configure(state= DISABLED)
+        E_Kilburn_Chocolate_Cake.set("0")
 
 
 #==================== Drinks ====================

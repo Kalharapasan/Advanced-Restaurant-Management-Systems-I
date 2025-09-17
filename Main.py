@@ -112,7 +112,7 @@ E_Queen_Park_Chocolate_Cake.set("0")
 DateofOrder.set(time.strftime("%d/%m/%Y"))
 
 
-#====================Calculator Display====================
+#====================Function====================
 
 def iExit():
     iExit = tkinter.messagebox.askyesno("Exit Restaurant System", "Confirm if you want to exit")
@@ -120,25 +120,51 @@ def iExit():
         root.destroy()
         return
 
-def btnClick(numbers):
-    global operator
-    operator = operator + str(numbers)
-    text_Input.set(operator)
+def Reset():
+    PaidTax.set("")
+    SubTotal.set("")
+    TotalCost.set("")
+    CostofCakes.set("")
+    CostofDrinks.set("")
+    ServiceCharge.set("")
+    txtReceipt.delete("1.0", END)
 
-def btnClear():
-    global operator
-    operator = ""
-    text_Input.set("")
+    E_Latta.set("0")
+    E_Espresso.set("0")
+    E_Iced_Latta.set("0")
+    E_Vale_Coffe.set("0")
+    E_Cappuccino.set("0")
+    E_African_Coffee.set("0")
+    E_American_Coffee.set("0")
+    E_Iced_Cappuccino.set("0")
 
-def btnEquals():
-    global operator
-    sumup = str(eval(operator))
-    text_Input.set(sumup)
-    operator = ""
-
-txtDisplay = Entry(Cal_F, width=45, bg="white", bd=4, font=('arial', 12, 'bold'), justify=RIGHT, textvariable=text_Input)
-txtDisplay.grid(row=0, column=0, columnspan=4, pady=1)
-txtDisplay.insert(0, "0")
+    E_School_Cake.set("0")
+    E_Sunny_AO_Cake.set("0")
+    E_Jonathan_YO_Cake.set("0")
+    E_West_African_Cake.set("0")
+    E_Lagos_Chocolate_Cake.set("0")
+    E_Kilburn_Chocolate_Cake.set("0")
+    E_Carlton_Hill_Chocolate_Cake.set("0")
+    E_Queen_Park_Chocolate_Cake.set("0")
+    
+    var1.set(0)
+    var2.set(0)
+    var3.set(0)
+    var4.set(0)
+    var5.set(0)
+    var6.set(0)
+    var7.set(0)
+    var8.set(0)
+    var9.set(0)
+    var10.set(0)
+    var11.set(0)
+    var12.set(0)
+    var13.set(0)
+    var14.set(0)
+    var15.set(0)
+    var16.set(0)
+    
+    
 
 #==================== Drinks ====================
 Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=0, sticky=W)
@@ -247,6 +273,28 @@ txtDisplay = Entry(Cal_F, width=45, bg="white", bd=4,font=('arial', 12, 'bold'),
 txtDisplay.grid(row=0, column=0, columnspan=4, pady=1)
 txtDisplay.insert(0, "0")
 
+
+#====================Calculator Display====================
+
+def btnClick(numbers):
+    global operator
+    operator = operator + str(numbers)
+    text_Input.set(operator)
+
+def btnClear():
+    global operator
+    operator = ""
+    text_Input.set("")
+
+def btnEquals():
+    global operator
+    sumup = str(eval(operator))
+    text_Input.set(sumup)
+    operator = ""
+
+txtDisplay = Entry(Cal_F, width=45, bg="white", bd=4, font=('arial', 12, 'bold'), justify=RIGHT, textvariable=text_Input)
+txtDisplay.grid(row=0, column=0, columnspan=4, pady=1)
+txtDisplay.insert(0, "0")
 
 #====================Calculator Buttons====================
 btn7 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), 

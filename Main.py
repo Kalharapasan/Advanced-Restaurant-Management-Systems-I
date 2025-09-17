@@ -349,6 +349,23 @@ def chkKilburn_Chocolate_Cake():
         txtKilburn_Chocolate_Cake.configure(state= DISABLED)
         E_Kilburn_Chocolate_Cake.set("0")
 
+def chkCarlton_Hill_Cake():
+    if (var15.get() == 1):
+        txtCarlton_Hill_Chocolate_Cake.configure(state= NORMAL)
+        txtCarlton_Hill_Chocolate_Cake.delete(0,END)
+        txtCarlton_Hill_Chocolate_Cake.focus()
+    elif var15.get()== 0:
+        txtCarlton_Hill_Chocolate_Cake.configure(state= DISABLED)
+        E_Carlton_Hill_Chocolate_Cake.set("0")
+        
+def chkQueen_Park_Cake():
+    if (var16.get() == 1):
+        txtQueen_Park_Chocolate_Cake.configure(state= NORMAL)
+        txtQueen_Park_Chocolate_Cake.delete(0,END)
+        txtQueen_Park_Chocolate_Cake.focus()
+    elif var16.get()== 0:
+        txtQueen_Park_Chocolate_Cake.configure(state= DISABLED)
+        E_Queen_Park_Chocolate_Cake.set("0")
 
 #==================== Drinks ====================
 Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, 

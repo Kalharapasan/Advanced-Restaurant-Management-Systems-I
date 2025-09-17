@@ -260,20 +260,24 @@ txtServiceCharge = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=Service
                         justify=RIGHT)
 txtServiceCharge.grid(row=2, column=1)
 
-#====================Payment Information====================
-lblPaidTax = Label(Cost_F,font=('arial', 14, 'bold'), text="\tPaid Tax\t", bd=7, bg="powder Blue",fg="black",)
+# =========================================================Payment Information=========================================================
+
+lblPaidTax = Label(Cost_F,font=('arial', 14, 'bold'), text="Paid Tax", bd=7,bg="powder Blue",fg="black")
 lblPaidTax.grid(row=0, column=2, sticky=W)
-txtPaidTax = Entry(Cost_F, font=('arial', 14, 'bold'), bd=7, bg="white", insertwidth=2, justify=RIGHT)
+txtPaidTax = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=PaidTax, bd=7, bg="White",
+                   insertwidth=2, justify=RIGHT)
 txtPaidTax.grid(row=0, column=3)
 
-lblSubTotal = Label(Cost_F,font=('arial', 14, 'bold'), text="\tSub Total", bd=7, bg="powder Blue",fg="black",)
+lblSubTotal = Label(Cost_F,font=('arial', 14, 'bold'), text="Sub Total", bd=7,bg="powder Blue",fg="black")
 lblSubTotal.grid(row=1, column=2, sticky=W)
-txtSubTotal = Entry(Cost_F, font=('arial', 14, 'bold'), bd=7, bg="white", insertwidth=2, justify=RIGHT)
+txtSubTotal = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=SubTotal, bd=7, bg="White",
+                    insertwidth=2, justify=RIGHT)
 txtSubTotal.grid(row=1, column=3)
 
-lblTotalCost = Label(Cost_F,font=('arial', 14, 'bold'), text="\tTotal Cost", bd=7, bg="powder Blue",fg="black",)
+lblTotalCost = Label(Cost_F,font=('arial', 14, 'bold'), text="Total Cost", bd=7, bg="powder Blue",fg="black")
 lblTotalCost.grid(row=2, column=2, sticky=W)
-txtTotalCost = Entry(Cost_F, font=('arial', 14, 'bold'), bd=7, bg="white", insertwidth=2, justify=RIGHT)
+txtTotalCost = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=TotalCost, bd=7, bg="white", insertwidth=2,
+                     justify=RIGHT)
 txtTotalCost.grid(row=2, column=3)
 
 #====================Receipt====================

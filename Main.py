@@ -193,22 +193,23 @@ African_Coffee = Checkbutton(Drinks_F, text="African Coffee", variable=var6, onv
 American_Coffee = Checkbutton(Drinks_F, text="American Coffee", variable=var7, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=6, sticky=W)
 Iced_Cappuccino = Checkbutton(Drinks_F, text="Iced Cappuccino", variable=var8, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=7, sticky=W)
 
-#==================== Entry Box for Drinks ====================
-txtLatta = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+#====================Entry Box for Drinks====================
+txtLatta = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Latta, bd=8,width=6, justify='left',state= DISABLED)
 txtLatta.grid(row=0,column=1)
-txtEspresso = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtEspresso = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Espresso, bd=8,width=6, justify='left',state= DISABLED)
 txtEspresso.grid(row=1,column=1)
-txtIced_Latta = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
-txtIced_Latta.grid(row=2,column=1)
-txtVale_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtIced_Latte = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Iced_Latta, bd=8,width=6, justify='left',state= DISABLED)
+txtIced_Latte.grid(row=2,column=1)
+txtVale_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Vale_Coffe, bd=8,width=6, justify='left',state= DISABLED)
 txtVale_Coffee.grid(row=3,column=1)
-txtCappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtCappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Cappuccino, bd=8,width=6, justify='left',state= DISABLED)
 txtCappuccino.grid(row=4,column=1)
-txtAfrican_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtAfrican_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_African_Coffee, bd=8,width=6, justify='left',state= DISABLED)
 txtAfrican_Coffee.grid(row=5,column=1)
-txtAmerican_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtAmerican_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_American_Coffee, bd=8,width=6, justify='left',state= DISABLED)
 txtAmerican_Coffee.grid(row=6,column=1)
-txtIced_Cappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtIced_Cappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Iced_Cappuccino, bd=8,width=6, justify='left',state= DISABLED)
+txtIced_Cappuccino.grid(row=7,column=1)
 txtIced_Cappuccino.grid(row=7,column=1)
 
 #==================== Cakes ====================
@@ -281,7 +282,7 @@ btnTotal = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16
 btnReceipt = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, 
                     text="Receipt", bg="powder blue").grid(row=0, column=1)
 btnReset = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, 
-                  text="Reset", bg="powder blue").grid(row=0, column=2)
+                  text="Reset", command=Reset, bg="powder blue").grid(row=0, column=2)
 btnExit = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, 
                  text="Exit", command=iExit,bg="powder blue").grid(row=0, column=3)
 

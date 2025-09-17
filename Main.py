@@ -250,6 +250,33 @@ def chkIced_Latte():
         txtIced_Latte.configure(state=DISABLED)
         E_Iced_Latta.set("0")
 
+def chkVale_Coffee():
+    if (var4.get() == 1):
+        txtVale_Coffee.configure(state= NORMAL)
+        txtVale_Coffee.delete(0,END)
+        txtVale_Coffee.focus()
+    elif var4.get() == 0:
+        txtVale_Coffee.configure(state= DISABLED)
+        E_Vale_Coffe.set("0")
+        
+def chkCappuccino():
+    if (var5.get() == 1):
+        txtCappuccino.configure(state= NORMAL)
+        txtCappuccino.delete(0,END)
+        txtCappuccino.focus()
+    elif var5.get() == 0:
+        txtCappuccino.configure(state= DISABLED)
+        E_Cappuccino.set("0")
+        
+def chkAfrican_Coffee():
+    if (var6.get() == 1):
+        txtAfrican_Coffee.configure(state= NORMAL)
+        txtAfrican_Coffee.delete(0,END)
+        txtAfrican_Coffee.focus()
+    elif var6.get() == 0:
+        txtAfrican_Coffee.configure(state= DISABLED)
+        E_African_Coffee.set("0")
+
 #==================== Drinks ====================
 Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, 
                     font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=0, sticky=W)

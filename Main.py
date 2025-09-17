@@ -116,4 +116,13 @@ txtCarlton_Hill_Chocolate_Cake.grid(row=6,column=1)
 txtQueen_Park_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
 txtQueen_Park_Chocolate_Cake.grid(row=7,column=1)
 
+#====================Receipt====================
+txtReceipt = Text(Receipt_F, width=46, height=12, bg="white", bd=4,font=('arial', 12, 'bold'))
+txtReceipt.grid(row=0, column=0)
+
+#====================Buttons====================
+btnTotal = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="Total", bg="powder blue").grid(row=0, column=0)
+btnReceipt = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="Receipt", bg="powder blue").grid(row=0, column=1)
+btnReset = Button(Buttons_F, padx=16
+
 root.mainloop()

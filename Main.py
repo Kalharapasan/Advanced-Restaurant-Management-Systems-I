@@ -313,6 +313,25 @@ def chkSunny_AO_Cake():
         txtSunny_AO_Cake.configure(state= DISABLED)
         E_Sunny_AO_Cake.set("0")
 
+def chkJonathan_YO_Cake():
+    if (var11.get() == 1):
+        txtJonathan_YO_Cake.configure(state= NORMAL)
+        txtJonathan_YO_Cake.delete(0,END)
+        txtJonathan_YO_Cake.focus()
+    elif var11.get()== 0:
+        txtJonathan_YO_Cake.configure(state= DISABLED)
+        E_Jonathan_YO_Cake.set("0")
+        
+def chkWest_African_Cake():
+    if (var12.get() == 1):
+        txtWest_African_Cake.configure(state= NORMAL)
+        txtWest_African_Cake.delete(0,END)
+        txtWest_African_Cake.focus()
+    elif var12.get() == 0:
+        txtWest_African_Cake.configure(state= DISABLED)
+        E_West_African_Cake.set("0")
+
+
 
 #==================== Drinks ====================
 Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, 

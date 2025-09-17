@@ -253,6 +253,11 @@ def btnEquals():
     text_Input.set(sumup)
     operator = ""
 
+txtDisplay = Entry(Cal_F, width=45, bg="white", bd=4, font=('arial', 12, 'bold'), justify=RIGHT, textvariable=text_Input)
+txtDisplay.grid(row=0, column=0, columnspan=4, pady=1)
+txtDisplay.insert(0, "0")
+
+
 
 
 root.mainloop()

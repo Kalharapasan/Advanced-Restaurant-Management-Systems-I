@@ -116,6 +116,22 @@ txtCarlton_Hill_Chocolate_Cake.grid(row=6,column=1)
 txtQueen_Park_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
 txtQueen_Park_Chocolate_Cake.grid(row=7,column=1)
 
+#====================Totals Cost====================
+lblCostofDrinks = Label(Cost_F,font=('arial', 14, 'bold'), text="Cost Of Drinks\t", bg="powder blue",fg="black",)
+lblCostofDrinks.grid(row=0,column=0, sticky=W)
+txtCostofDrinks = Entry(Cost_F,font=('arial', 14, 'bold'), bd=7, bg="white", insertwidth=2, justify=RIGHT)
+txtCostofDrinks.grid(row=0,column=1)
+
+lblCostofCakes = Label(Cost_F,font=('arial', 14, 'bold'), text="Cost Of Cakes  ", bg="powder blue",fg="black",)
+lblCostofCakes.grid(row=1,column=0, sticky=W)
+txtCostofCakes = Entry(Cost_F,font=('arial', 14, 'bold'), bd=7, bg="white", insertwidth=2, justify=RIGHT)
+txtCostofCakes.grid(row=1,column=1)
+
+lblServiceCharge = Label(Cost_F,font=('arial', 14, 'bold'), text="Service Charge ", bg="powder blue",fg="black",)
+lblServiceCharge.grid(row=2,column=0, sticky=W)
+txtServiceCharge = Entry(Cost_F,font=('arial', 14, 'bold'), bd=7, bg="white", justify=RIGHT)
+txtServiceCharge.grid(row=2,column=1)
+
 #====================Receipt====================
 txtReceipt = Text(Receipt_F, width=46, height=12, bg="white", bd=4,font=('arial', 12, 'bold'))
 txtReceipt.grid(row=0, column=0)
@@ -152,5 +168,8 @@ btn0 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold')
 btnClear = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="C", bg="powder blue").grid(row=5, column=1)
 btnEquals = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="=", bg="powder blue").grid(row=5, column=2)
 btnDiv = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="/", bg="powder blue").grid(row=5, column=3)
+
+
+
 
 root.mainloop()

@@ -237,6 +237,8 @@ txtKilburn_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=
 txtKilburn_Chocolate_Cake.grid(row=5,column=1)
 txtCarlton_Hill_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Carlton_Hill_Chocolate_Cake)
 txtCarlton_Hill_Chocolate_Cake.grid(row=6,column=1)
+txtQueen_Park_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8, width=6, justify='left', state=DISABLED, textvariable=E_Queen_Park_Chocolate_Cake)
+txtQueen_Park_Chocolate_Cake.grid(row=7, column=1)
 
 #====================Totals Cost====================
 lblCostofDrinks = Label(Cost_F,font=('arial', 14, 'bold'), text="Cost Of Drinks\t", bg="powder blue",fg="black",)

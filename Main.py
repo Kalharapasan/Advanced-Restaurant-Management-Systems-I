@@ -30,4 +30,21 @@ Receipt_F.pack(side=BOTTOM)
 MenuFrame = Frame(root, bg='Cadet Blue', bd=10, relief=RIDGE)
 MenuFrame.pack(side=LEFT)
 
+Cost_F = Frame(MenuFrame, bg='Powder Blue', bd=4)
+Cost_F.pack(side=BOTTOM)
+
+Drinks_F=Frame(MenuFrame, bg='Cadet Blue', bd=10)
+Drinks_F.pack(side=TOP)
+
+Drinks_F=Frame(MenuFrame, bg='Cadet Blue', bd=10, relief=RIDGE)
+Drinks_F.pack(side=LEFT)
+
+Cake_F=Frame(MenuFrame, bg='Powder Blue', bd=10, relief=RIDGE)
+Cake_F.pack(side=RIGHT)
+
+var1=IntVar()
+
+Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=0, sticky=W)
+
+
 root.mainloop()

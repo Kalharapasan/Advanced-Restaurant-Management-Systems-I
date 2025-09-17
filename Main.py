@@ -60,6 +60,7 @@ var14=IntVar()
 var15=IntVar()
 var16=IntVar()
 
+#==================== Drinks ====================
 Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=0, sticky=W)
 Espresso = Checkbutton(Drinks_F, text="Espresso", variable=var2, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=1, sticky=W)
 Iced_Latta = Checkbutton(Drinks_F, text="Iced Latta", variable=var3, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=2, sticky=W)
@@ -68,6 +69,24 @@ Cappuccino = Checkbutton(Drinks_F, text="Cappuccino", variable=var5, onvalue=1, 
 African_Coffee = Checkbutton(Drinks_F, text="African Coffee", variable=var6, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=5, sticky=W)
 American_Coffee = Checkbutton(Drinks_F, text="American Coffee", variable=var7, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=6, sticky=W)
 Iced_Cappuccino = Checkbutton(Drinks_F, text="Iced Cappuccino", variable=var8, onvalue=1, offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=7, sticky=W)
+
+#==================== Entry Box for Drinks ====================
+txtLatta = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtLatta.grid(row=0,column=1)
+txtEspresso = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtEspresso.grid(row=1,column=1)
+txtIced_Latta = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtIced_Latta.grid(row=2,column=1)
+txtVale_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtVale_Coffee.grid(row=3,column=1)
+txtCappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtCappuccino.grid(row=4,column=1)
+txtAfrican_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtAfrican_Coffee.grid(row=5,column=1)
+txtAmerican_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtAmerican_Coffee.grid(row=6,column=1)
+txtIced_Cappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED)
+txtIced_Cappuccino.grid(row=7,column=1)
 
 #==================== Cakes ====================
 SchoolCake = Checkbutton(Cake_F, text="School Cake\t\t", variable=var9, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=0, sticky=W)
@@ -78,5 +97,7 @@ Lagos_Chocolate_Cake = Checkbutton(Cake_F, text="Lagos Chocolate Cake", variable
 Kilburn_Chocolate_Cake = Checkbutton(Cake_F, text="Kilburn Chocolate Cake", variable=var14, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=5, sticky=W)
 Carlton_Hill_Cake = Checkbutton(Cake_F, text="Carlton Hill Chocolate Cake", variable=var15, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=6, sticky=W)
 Queen_Park_Cake = Checkbutton(Cake_F, text="Queen's Park Chocolate Cake", variable=var16, onvalue=1, offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=7, sticky=W)
+
+
 
 root.mainloop()

@@ -73,8 +73,6 @@ ServiceCharge=StringVar()
 text_Input = StringVar()
 operator = ""
 
-
-
 E_Latta=StringVar()
 E_Espresso=StringVar()
 E_Iced_Latta=StringVar()
@@ -238,6 +236,22 @@ btnClear = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bo
 btnEquals = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="=", bg="powder blue").grid(row=5, column=2)
 btnDiv = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="/", bg="powder blue").grid(row=5, column=3)
 
+#====================Calculator Display====================
+def btnClick(numbers):
+    global operator
+    operator = operator + str(numbers)
+    text_Input.set(operator)
+
+def btnClear():
+    global operator
+    operator = ""
+    text_Input.set("")
+
+def btnEquals():
+    global operator
+    sumup = str(eval(operator))
+    text_Input.set(sumup)
+    operator = ""
 
 
 

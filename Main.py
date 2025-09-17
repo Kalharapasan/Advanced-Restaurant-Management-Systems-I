@@ -412,30 +412,31 @@ txtIced_Cappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_I
 txtIced_Cappuccino.grid(row=7,column=1)
 txtIced_Cappuccino.grid(row=7,column=1)
 
-#==================== Cakes ====================
-SchoolCake = Checkbutton(Cake_F, text="School Cake\t\t", variable=var9, onvalue=1, 
-                         offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=0, sticky=W)
+# =========================================================Cakes=========================================================
 
-Sunny_AO_Cake = Checkbutton(Cake_F, text="Sunday O Cake ", variable=var10, onvalue=1, 
-                            offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=1, sticky=W)
+SchoolCake = Checkbutton(Cake_F, text="School Cake", variable=var9, onvalue = 1, offvalue = 0,
+                         font=('arial',16, 'bold'),bg="powder blue",command=chkSchool_Cake).grid(row=0, sticky=W)
 
-Jonathan_YO_Cake = Checkbutton(Cake_F, text="Jonathan O Cake ", variable=var11, onvalue=1,
-                               offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=2, sticky=W)
+Sunny_AO_Cake = Checkbutton(Cake_F, text="Sunday O Cake ", variable=var10, onvalue = 1, offvalue = 0,
+                            font=('arial',16, 'bold'),bg="powder blue",command=chkSunny_AO_Cake).grid(row=1, sticky=W)
 
-West_African_Cake = Checkbutton(Cake_F, text="West African Cake ", variable=var12, onvalue=1, 
-                                offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=3, sticky=W)
+Jonathan_YO_Cake = Checkbutton(Cake_F, text="Jonathan O Cake ", variable=var11, onvalue = 1, offvalue = 0,
+                               font=('arial',16, 'bold'),bg="powder blue",command=chkJonathan_YO_Cake).grid(row=2, sticky=W)
 
-Lagos_Chocolate_Cake = Checkbutton(Cake_F, text="Lagos Chocolate Cake", variable=var13, onvalue=1, 
-                                   offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=4, sticky=W)
+West_African_Cake = Checkbutton(Cake_F, text="West African Cake ", variable=var12, onvalue = 1, offvalue = 0,
+                                font=('arial',16, 'bold'),bg="powder blue",command=chkWest_African_Cake).grid(row=3, sticky=W)
 
-Kilburn_Chocolate_Cake = Checkbutton(Cake_F, text="Kilburn Chocolate Cake", variable=var14, onvalue=1,
-                                     offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=5, sticky=W)
+Lagos_Chocolate_Cake = Checkbutton(Cake_F, text="Lagos Chocolate Cake", variable=var13, onvalue = 1, offvalue = 0,
+                                   font=('arial',16, 'bold'),bg="powder blue",command=chkLagos_Chocolate_Cake).grid(row=4, sticky=W)
 
-Carlton_Hill_Cake = Checkbutton(Cake_F, text="Carlton Hill Chocolate Cake", variable=var15, onvalue=1,
-                                offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=6, sticky=W)
+Kilburn_Chocolate_Cake = Checkbutton(Cake_F, text="Kilburn Chocolate Cake", variable=var14, onvalue = 1, offvalue = 0,
+                                     font=('arial',16, 'bold'),bg="powder blue",command=chkKilburn_Chocolate_Cake).grid(row=5, sticky=W)
 
-Queen_Park_Cake = Checkbutton(Cake_F, text="Queen's Park Chocolate Cake", variable=var16, onvalue=1, 
-                              offvalue=0, font=('arial',16, 'bold'), bg='powder blue').grid(row=7, sticky=W)
+Carlton_Hill_Cake = Checkbutton(Cake_F, text="Carlton Hill Chocolate Cake", variable=var15, onvalue = 1, offvalue = 0,
+                                font=('arial',16, 'bold'),bg="powder blue",command=chkCarlton_Hill_Cake).grid(row=6, sticky=W)
+
+Queen_Park_Cake = Checkbutton(Cake_F, text="Queen's Park Chocolate Cake", variable=var16, onvalue = 1, offvalue = 0,
+                              font=('arial',16, 'bold'),bg="powder blue",command=chkQueen_Park_Cake).grid(row=7, sticky=W)
 
 #====================Entry Box for Cakes====================
 txtSchool_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_School_Cake)

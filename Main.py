@@ -180,6 +180,26 @@ def Reset():
     txtKilburn_Chocolate_Cake.configure(state= DISABLED)
     txtCarlton_Hill_Cake.configure(state= DISABLED)
     txtQueen_Park_Chocolate_Cake.configure(state= DISABLED)
+
+def CostofItem():
+    Item1=float(E_Latta.get())
+    Item2=float(E_Espresso.get())
+    Item3=float(E_Iced_Latta.get())
+    Item4=float(E_Vale_Coffe.get())
+    Item5=float(E_Cappuccino.get())
+    Item6=float(E_African_Coffee.get())
+    Item7=float(E_American_Coffee.get())
+    Item8=float(E_Iced_Cappuccino.get())
+    
+    Item9=float(E_School_Cake.get())
+    Item10=float(E_Sunny_AO_Cake.get())
+    Item11=float(E_Jonathan_YO_Cake.get())
+    Item12=float(E_West_African_Cake.get())
+    Item13=float(E_Lagos_Chocolate_Cake.get())
+    Item14=float(E_Kilburn_Chocolate_Cake.get())
+    Item15=float(E_Carlton_Hill_Chocolate_Cake.get())
+    Item16=float(E_Queen_Park_Chocolate_Cake.get())
+
     
     
 

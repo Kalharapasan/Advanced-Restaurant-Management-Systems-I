@@ -164,6 +164,23 @@ def Reset():
     var15.set(0)
     var16.set(0)
     
+    txtLatta.configure(state =DISABLED)
+    txtEspresso.configure(state= DISABLED)
+    txtIced_Latte.configure(state= DISABLED)
+    txtVale_Coffee.configure(state= DISABLED)
+    txtCappuccino.configure(state= DISABLED)
+    txtAfrican_Coffee.configure(state= DISABLED)
+    txtAmerican_Coffee.configure(state= DISABLED)
+    txtIced_Cappuccino.configure(state= DISABLED)
+    txtSchool_Cake.configure(state= DISABLED)
+    txtSunny_AO_Cake.configure(state= DISABLED)
+    txtJonathan_YO_Cake.configure(state= DISABLED)
+    txtWest_African_Cake.configure(state= DISABLED)
+    txtLagos_Chocolate_Cake.configure(state= DISABLED)
+    txtKilburn_Chocolate_Cake.configure(state= DISABLED)
+    txtCarlton_Hill_Cake.configure(state= DISABLED)
+    txtQueen_Park_Chocolate_Cake.configure(state= DISABLED)
+    
     
 
 #==================== Drinks ====================

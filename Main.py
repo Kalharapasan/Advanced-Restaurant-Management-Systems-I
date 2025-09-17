@@ -138,16 +138,15 @@ btn9 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold
 btnadd = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="+", bg="powder blue").grid(row=2, column=3)
 
 #====================Calculator Buttons====================
-btn7 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="4", bg="powder blue").grid(row=3, column=0)
-btn8 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="5", bg="powder blue").grid(row=3, column=1)
-btn9 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="6", bg="powder blue").grid(row=3, column=2)
-btnadd = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="-", bg="powder blue").grid(row=3, column=3)
-
+btn4 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="4", bg="powder blue").grid(row=3, column=0)
+btn5 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="5", bg="powder blue").grid(row=3, column=1)
+btn6 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="6", bg="powder blue").grid(row=3, column=2)
+btnSub = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="-", bg="powder blue").grid(row=3, column=3)
 #====================Calculator Buttons====================
-btn7 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="1", bg="powder blue").grid(row=4, column=0)
-btn8 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="2", bg="powder blue").grid(row=4, column=1)
-btn9 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="3", bg="powder blue").grid(row=4, column=2)
-btnadd = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="=", bg="powder blue").grid(row=4, column=3)
+btn7 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="1", bg="powder blue").grid(row=4, column=0)
+btn8 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="2", bg="powder blue").grid(row=4, column=1)
+btn9 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="3", bg="powder blue").grid(row=4, column=2)
+btnMul = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), width=4, text="*", bg="powder blue").grid(row=4, column=3)
 
 
 root.mainloop()

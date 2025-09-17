@@ -367,30 +367,31 @@ def chkQueen_Park_Cake():
         txtQueen_Park_Chocolate_Cake.configure(state= DISABLED)
         E_Queen_Park_Chocolate_Cake.set("0")
 
-#==================== Drinks ====================
-Latta = Checkbutton(Drinks_F, text="Latta", variable=var1, onvalue=1, offvalue=0, 
-                    font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=0, sticky=W)
+# =========================================================Drinks=========================================================
 
-Espresso = Checkbutton(Drinks_F, text="Espresso", variable=var2, onvalue=1, offvalue=0,
-                       font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=1, sticky=W)
+Latta = Checkbutton(Drinks_F, text="Latta ", variable=var1, onvalue = 1, offvalue = 0,
+                    font=('arial',18, 'bold'),bg="powder blue",command=chkLatta).grid(row=0, sticky=W)
 
-Iced_Latta = Checkbutton(Drinks_F, text="Iced Latta", variable=var3, onvalue=1, offvalue=0,
-                         font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=2, sticky=W)
+Espresso = Checkbutton(Drinks_F, text="Espresso ", variable=var2, onvalue = 1, offvalue = 0,
+                       font=('arial',18, 'bold'),bg="powder blue",command=chkEspresso).grid(row=1, sticky=W)
 
-Vale_Coffee = Checkbutton(Drinks_F, text="Vale Coffee", variable=var4, onvalue=1, offvalue=0, 
-                          font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=3, sticky=W)
+Iced_Latte = Checkbutton(Drinks_F, text="Iced Latte ", variable=var3, onvalue = 1, offvalue = 0,
+                         font=('arial',18, 'bold'),bg="powder blue",command=chkIced_Latte).grid(row=2, sticky=W)
 
-Cappuccino = Checkbutton(Drinks_F, text="Cappuccino", variable=var5, onvalue=1, offvalue=0, 
-                         font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=4, sticky=W)
+Vale_Coffee = Checkbutton(Drinks_F, text="Vale Coffee", variable=var4, onvalue = 1, offvalue = 0,
+                          font=('arial',18, 'bold'),bg="powder blue",command=chkVale_Coffee).grid(row=3, sticky=W)
 
-African_Coffee = Checkbutton(Drinks_F, text="African Coffee", variable=var6, onvalue=1, 
-                             offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=5, sticky=W)
+Cappuccino= Checkbutton(Drinks_F, text="Cappuccino", variable=var5, onvalue = 1, offvalue = 0,
+                        font=('arial',18, 'bold'),bg="powder blue",command=chkCappuccino).grid(row=4, sticky=W)
 
-American_Coffee = Checkbutton(Drinks_F, text="American Coffee", variable=var7, onvalue=1,
-                              offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=6, sticky=W)
+African_Coffee = Checkbutton(Drinks_F, text="African Coffee", variable=var6, onvalue = 1, offvalue = 0,
+                             font=('arial',18, 'bold'),bg="powder blue",command=chkAfrican_Coffee ).grid(row=5, sticky=W)
 
-Iced_Cappuccino = Checkbutton(Drinks_F, text="Iced Cappuccino", variable=var8, onvalue=1, 
-                              offvalue=0, font=('arial', 18, 'bold'), bg='Powder Blue').grid(row=7, sticky=W)
+American_Coffee = Checkbutton(Drinks_F, text="American Coffee ", variable=var7, onvalue = 1, offvalue = 0,
+                              font=('arial',18, 'bold'),bg="powder blue",command=chkAmerican_Coffee).grid(row=6, sticky=W)
+
+Iced_Cappuccino = Checkbutton(Drinks_F, text="Iced Cappuccino", variable=var8, onvalue = 1, offvalue = 0,
+                              font=('arial',18, 'bold'),bg="powder blue",command=chkIced_Cappuccino).grid(row=7, sticky=W)
 
 #====================Entry Box for Drinks====================
 txtLatta = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Latta, bd=8,width=6, justify='left',state= DISABLED)

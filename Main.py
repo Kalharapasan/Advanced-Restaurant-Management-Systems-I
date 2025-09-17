@@ -7,40 +7,40 @@ from tkinter import*
 root = Tk()
 root.geometry("1350x750+0+0")
 root.title("Restaurant Management Systems")
-root.configure(background = 'Cadet Blue')
+root.configure(background = 'LightSteelBlue') # Changed from Cadet Blue to LightSteelBlue
 
-Tops = Frame(root, bg='Cadet Blue', bd=20, pady=5, relief=RIDGE)
+Tops = Frame(root, bg='SteelBlue', bd=20, pady=5, relief=RIDGE) # Changed from Cadet Blue to SteelBlue
 Tops.pack(side=TOP)
 
-lblTitle = Label(Tops, font=('arial', 60, 'bold'), text="Restaurant Management Systems", 
-                 bd=21, bg='Cadet Blue', fg='Cornsilk', justify=CENTER)
+lblTitle = Label(Tops, font=('Helvetica', 65, 'bold'), text="Restaurant Management Systems", # Changed font to Helvetica, size 65
+                 bd=21, bg='SteelBlue', fg='White', justify=CENTER) # Changed bg to SteelBlue, fg to White
 lblTitle.grid(row=0, column=0)
 
-ReceiptCal_F = Frame(root, bg='Powder Blue', bd=10, relief=RIDGE)
+ReceiptCal_F = Frame(root, bg='LightGray', bd=10, relief=RIDGE) # Changed from Powder Blue to LightGray
 ReceiptCal_F.pack(side=RIGHT)
 
-Buttons_F=Frame(ReceiptCal_F, bg='Powder Blue', bd=3, relief=RIDGE)
+Buttons_F=Frame(ReceiptCal_F, bg='LightGray', bd=3, relief=RIDGE) # Changed from Powder Blue to LightGray
 Buttons_F.pack(side=BOTTOM)
 
-Cal_F=Frame(ReceiptCal_F, bg='Powder Blue', bd=6, relief=RIDGE)
+Cal_F=Frame(ReceiptCal_F, bg='LightGray', bd=6, relief=RIDGE) # Changed from Powder Blue to LightGray
 Cal_F.pack(side=TOP)
 
-Receipt_F=Frame(ReceiptCal_F, bg='Powder Blue', bd=4, relief=RIDGE)
+Receipt_F=Frame(ReceiptCal_F, bg='LightGray', bd=4, relief=RIDGE) # Changed from Powder Blue to LightGray
 Receipt_F.pack(side=BOTTOM)
 
-MenuFrame = Frame(root, bg='Cadet Blue', bd=10, relief=RIDGE)
+MenuFrame = Frame(root, bg='LightSteelBlue', bd=10, relief=RIDGE) # Changed from Cadet Blue to LightSteelBlue
 MenuFrame.pack(side=LEFT)
 
-Cost_F = Frame(MenuFrame, bg='Powder Blue', bd=4)
+Cost_F = Frame(MenuFrame, bg='LightGray', bd=4) # Changed from Powder Blue to LightGray
 Cost_F.pack(side=BOTTOM)
 
-Drinks_F=Frame(MenuFrame, bg='Cadet Blue', bd=10)
+Drinks_F=Frame(MenuFrame, bg='LightCyan', bd=10) # Changed from Cadet Blue to LightCyan
 Drinks_F.pack(side=TOP)
 
-Drinks_F=Frame(MenuFrame, bg='Cadet Blue', bd=10, relief=RIDGE)
+Drinks_F=Frame(MenuFrame, bg='LightCyan', bd=10, relief=RIDGE) # Changed from Cadet Blue to LightCyan
 Drinks_F.pack(side=LEFT)
 
-Cake_F=Frame(MenuFrame, bg='Powder Blue', bd=10, relief=RIDGE)
+Cake_F=Frame(MenuFrame, bg='LightCyan', bd=10, relief=RIDGE) # Changed from Powder Blue to LightCyan
 Cake_F.pack(side=RIGHT)
 
 #====================Variable====================
@@ -398,148 +398,148 @@ def Receipt():
 # =========================================================Drinks=========================================================
 
 Latta = Checkbutton(Drinks_F, text="Latta ", variable=var1, onvalue = 1, offvalue = 0,
-                    font=('arial',18, 'bold'),bg="powder blue",command=chkLatta).grid(row=0, sticky=W)
+                    font=('Verdana',16, 'bold'),bg="LightCyan",command=chkLatta).grid(row=0, sticky=W) # Font and bg changed
 
 Espresso = Checkbutton(Drinks_F, text="Espresso ", variable=var2, onvalue = 1, offvalue = 0,
-                       font=('arial',18, 'bold'),bg="powder blue",command=chkEspresso).grid(row=1, sticky=W)
+                       font=('Verdana',16, 'bold'),bg="LightCyan",command=chkEspresso).grid(row=1, sticky=W) # Font and bg changed
 
 Iced_Latte = Checkbutton(Drinks_F, text="Iced Latte ", variable=var3, onvalue = 1, offvalue = 0,
-                         font=('arial',18, 'bold'),bg="powder blue",command=chkIced_Latte).grid(row=2, sticky=W)
+                         font=('Verdana',16, 'bold'),bg="LightCyan",command=chkIced_Latte).grid(row=2, sticky=W) # Font and bg changed
 
 Vale_Coffee = Checkbutton(Drinks_F, text="Vale Coffee", variable=var4, onvalue = 1, offvalue = 0,
-                          font=('arial',18, 'bold'),bg="powder blue",command=chkVale_Coffee).grid(row=3, sticky=W)
+                          font=('Verdana',16, 'bold'),bg="LightCyan",command=chkVale_Coffee).grid(row=3, sticky=W) # Font and bg changed
 
 Cappuccino= Checkbutton(Drinks_F, text="Cappuccino", variable=var5, onvalue = 1, offvalue = 0,
-                        font=('arial',18, 'bold'),bg="powder blue",command=chkCappuccino).grid(row=4, sticky=W)
+                        font=('Verdana',16, 'bold'),bg="LightCyan",command=chkCappuccino).grid(row=4, sticky=W) # Font and bg changed
 
 African_Coffee = Checkbutton(Drinks_F, text="African Coffee", variable=var6, onvalue = 1, offvalue = 0,
-                             font=('arial',18, 'bold'),bg="powder blue",command=chkAfrican_Coffee ).grid(row=5, sticky=W)
+                             font=('Verdana',16, 'bold'),bg="LightCyan",command=chkAfrican_Coffee ).grid(row=5, sticky=W) # Font and bg changed
 
 American_Coffee = Checkbutton(Drinks_F, text="American Coffee ", variable=var7, onvalue = 1, offvalue = 0,
-                              font=('arial',18, 'bold'),bg="powder blue",command=chkAmerican_Coffee).grid(row=6, sticky=W)
+                              font=('Verdana',16, 'bold'),bg="LightCyan",command=chkAmerican_Coffee).grid(row=6, sticky=W) # Font and bg changed
 
 Iced_Cappuccino = Checkbutton(Drinks_F, text="Iced Cappuccino", variable=var8, onvalue = 1, offvalue = 0,
-                              font=('arial',18, 'bold'),bg="powder blue",command=chkIced_Cappuccino).grid(row=7, sticky=W)
+                              font=('Verdana',16, 'bold'),bg="LightCyan",command=chkIced_Cappuccino).grid(row=7, sticky=W) # Font and bg changed
 
 #====================Entry Box for Drinks====================
-txtLatta = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Latta, bd=8,width=6, justify='left',state= DISABLED)
+txtLatta = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Latta, bd=8,width=6, justify='left',state= DISABLED, bg='AliceBlue') # bg changed
 txtLatta.grid(row=0,column=1)
-txtEspresso = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Espresso, bd=8,width=6, justify='left',state= DISABLED)
+txtEspresso = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Espresso, bd=8,width=6, justify='left',state= DISABLED, bg='AliceBlue') # bg changed
 txtEspresso.grid(row=1,column=1)
-txtIced_Latte = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Iced_Latta, bd=8,width=6, justify='left',state= DISABLED)
+txtIced_Latte = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Iced_Latta, bd=8,width=6, justify='left',state= DISABLED, bg='AliceBlue') # bg changed
 txtIced_Latte.grid(row=2,column=1)
-txtVale_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Vale_Coffe, bd=8,width=6, justify='left',state= DISABLED)
+txtVale_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Vale_Coffe, bd=8,width=6, justify='left',state= DISABLED, bg='AliceBlue') # bg changed
 txtVale_Coffee.grid(row=3,column=1)
-txtCappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Cappuccino, bd=8,width=6, justify='left',state= DISABLED)
+txtCappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Cappuccino, bd=8,width=6, justify='left',state= DISABLED, bg='AliceBlue') # bg changed
 txtCappuccino.grid(row=4,column=1)
-txtAfrican_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_African_Coffee, bd=8,width=6, justify='left',state= DISABLED)
+txtAfrican_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_African_Coffee, bd=8,width=6, justify='left',state= DISABLED, bg='AliceBlue') # bg changed
 txtAfrican_Coffee.grid(row=5,column=1)
-txtAmerican_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_American_Coffee, bd=8,width=6, justify='left',state= DISABLED)
+txtAmerican_Coffee = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_American_Coffee, bd=8,width=6, justify='left',state= DISABLED, bg='AliceBlue') # bg changed
 txtAmerican_Coffee.grid(row=6,column=1)
-txtIced_Cappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Iced_Cappuccino, bd=8,width=6, justify='left',state= DISABLED)
+txtIced_Cappuccino = Entry(Drinks_F,font=('arial', 16, 'bold'), textvariable=E_Iced_Cappuccino, bd=8,width=6, justify='left',state= DISABLED, bg='AliceBlue') # bg changed
 txtIced_Cappuccino.grid(row=7,column=1)
 txtIced_Cappuccino.grid(row=7,column=1)
 
 # =========================================================Cakes=========================================================
 
 SchoolCake = Checkbutton(Cake_F, text="School Cake", variable=var9, onvalue = 1, offvalue = 0,
-                         font=('arial',16, 'bold'),bg="powder blue",command=chkSchool_Cake).grid(row=0, sticky=W)
+                         font=('Verdana',16, 'bold'),bg="LightCyan",command=chkSchool_Cake).grid(row=0, sticky=W) # Font and bg changed
 
 Sunny_AO_Cake = Checkbutton(Cake_F, text="Sunday O Cake ", variable=var10, onvalue = 1, offvalue = 0,
-                            font=('arial',16, 'bold'),bg="powder blue",command=chkSunny_AO_Cake).grid(row=1, sticky=W)
+                            font=('Verdana',16, 'bold'),bg="LightCyan",command=chkSunny_AO_Cake).grid(row=1, sticky=W) # Font and bg changed
 
 Jonathan_YO_Cake = Checkbutton(Cake_F, text="Jonathan O Cake ", variable=var11, onvalue = 1, offvalue = 0,
-                               font=('arial',16, 'bold'),bg="powder blue",command=chkJonathan_YO_Cake).grid(row=2, sticky=W)
+                               font=('Verdana',16, 'bold'),bg="LightCyan",command=chkJonathan_YO_Cake).grid(row=2, sticky=W) # Font and bg changed
 
 West_African_Cake = Checkbutton(Cake_F, text="West African Cake ", variable=var12, onvalue = 1, offvalue = 0,
-                                font=('arial',16, 'bold'),bg="powder blue",command=chkWest_African_Cake).grid(row=3, sticky=W)
+                                font=('Verdana',16, 'bold'),bg="LightCyan",command=chkWest_African_Cake).grid(row=3, sticky=W) # Font and bg changed
 
 Lagos_Chocolate_Cake = Checkbutton(Cake_F, text="Lagos Chocolate Cake", variable=var13, onvalue = 1, offvalue = 0,
-                                   font=('arial',16, 'bold'),bg="powder blue",command=chkLagos_Chocolate_Cake).grid(row=4, sticky=W)
+                                   font=('Verdana',16, 'bold'),bg="LightCyan",command=chkLagos_Chocolate_Cake).grid(row=4, sticky=W) # Font and bg changed
 
 Kilburn_Chocolate_Cake = Checkbutton(Cake_F, text="Kilburn Chocolate Cake", variable=var14, onvalue = 1, offvalue = 0,
-                                     font=('arial',16, 'bold'),bg="powder blue",command=chkKilburn_Chocolate_Cake).grid(row=5, sticky=W)
+                                     font=('Verdana',16, 'bold'),bg="LightCyan",command=chkKilburn_Chocolate_Cake).grid(row=5, sticky=W) # Font and bg changed
 
 Carlton_Hill_Cake = Checkbutton(Cake_F, text="Carlton Hill Chocolate Cake", variable=var15, onvalue = 1, offvalue = 0,
-                                font=('arial',16, 'bold'),bg="powder blue",command=chkCarlton_Hill_Cake).grid(row=6, sticky=W)
+                                font=('Verdana',16, 'bold'),bg="LightCyan",command=chkCarlton_Hill_Cake).grid(row=6, sticky=W) # Font and bg changed
 
 Queen_Park_Cake = Checkbutton(Cake_F, text="Queen's Park Chocolate Cake", variable=var16, onvalue = 1, offvalue = 0,
-                              font=('arial',16, 'bold'),bg="powder blue",command=chkQueen_Park_Cake).grid(row=7, sticky=W)
+                              font=('Verdana',16, 'bold'),bg="LightCyan",command=chkQueen_Park_Cake).grid(row=7, sticky=W) # Font and bg changed
 
 #====================Entry Box for Cakes====================
-txtSchool_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_School_Cake)
+txtSchool_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_School_Cake, bg='AliceBlue') # bg changed
 txtSchool_Cake.grid(row=0,column=1)
-txtSunny_AO_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Sunny_AO_Cake)
+txtSunny_AO_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Sunny_AO_Cake, bg='AliceBlue') # bg changed
 txtSunny_AO_Cake.grid(row=1,column=1)
-txtJonathan_YO_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Jonathan_YO_Cake)
+txtJonathan_YO_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Jonathan_YO_Cake, bg='AliceBlue') # bg changed
 txtJonathan_YO_Cake.grid(row=2,column=1)
-txtWest_African_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_West_African_Cake)
+txtWest_African_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_West_African_Cake, bg='AliceBlue') # bg changed
 txtWest_African_Cake.grid(row=3,column=1)
-txtLagos_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Lagos_Chocolate_Cake)
+txtLagos_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Lagos_Chocolate_Cake, bg='AliceBlue') # bg changed
 txtLagos_Chocolate_Cake.grid(row=4,column=1)
-txtKilburn_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Kilburn_Chocolate_Cake)
+txtKilburn_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Kilburn_Chocolate_Cake, bg='AliceBlue') # bg changed
 txtKilburn_Chocolate_Cake.grid(row=5,column=1)
-txtCarlton_Hill_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Carlton_Hill_Chocolate_Cake)
+txtCarlton_Hill_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8,width=6, justify='left',state= DISABLED, textvariable=E_Carlton_Hill_Chocolate_Cake, bg='AliceBlue') # bg changed
 txtCarlton_Hill_Chocolate_Cake.grid(row=6,column=1)
-txtQueen_Park_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8, width=6, justify='left', state=DISABLED, textvariable=E_Queen_Park_Chocolate_Cake)
+txtQueen_Park_Chocolate_Cake = Entry(Cake_F,font=('arial', 16, 'bold'), bd=8, width=6, justify='left', state=DISABLED, textvariable=E_Queen_Park_Chocolate_Cake, bg='AliceBlue') # bg changed
 txtQueen_Park_Chocolate_Cake.grid(row=7, column=1)
 
 # =========================================================Totals Cost=========================================================
 
-lblCostofDrinks = Label(Cost_F,font=('arial', 14, 'bold'), text="Cost of Drinks", bg="powder Blue",fg="black")
+lblCostofDrinks = Label(Cost_F,font=('Verdana', 13, 'bold'), text="Cost of Drinks", bg="LightGray",fg="black") # Font and bg changed
 lblCostofDrinks.grid(row=0, column=0, sticky=W)
-txtCostofDrinks = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=CostofDrinks, bd=7,bg="White",
+txtCostofDrinks = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=CostofDrinks, bd=7,bg="AliceBlue", # bg changed
                         insertwidth=2, justify=RIGHT)
 txtCostofDrinks.grid(row=0, column=1)
 
-lblCostofCakes = Label(Cost_F,font=('arial', 14, 'bold'), text="Cost of Cakes ", bg="powder Blue",fg="black")
+lblCostofCakes = Label(Cost_F,font=('Verdana', 13, 'bold'), text="Cost of Cakes ", bg="LightGray",fg="black") # Font and bg changed
 lblCostofCakes.grid(row=1, column=0, sticky=W)
-txtCostofCakes = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=CostofCakes, bd=7,bg="White",
+txtCostofCakes = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=CostofCakes, bd=7,bg="AliceBlue", # bg changed
                         insertwidth=2, justify=RIGHT)
 txtCostofCakes.grid(row=1, column=1)
 
-lblServiceCharge = Label(Cost_F,font=('arial', 14, 'bold'), text="Service Charge ", bg="powder Blue",fg="black")
+lblServiceCharge = Label(Cost_F,font=('Verdana', 13, 'bold'), text="Service Charge ", bg="LightGray",fg="black") # Font and bg changed
 lblServiceCharge.grid(row=2, column=0, sticky=W)
-txtServiceCharge = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=ServiceCharge, bd=7,bg="White",
+txtServiceCharge = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=ServiceCharge, bd=7,bg="AliceBlue", # bg changed
                         justify=RIGHT)
 txtServiceCharge.grid(row=2, column=1)
 
 # =========================================================Payment Information=========================================================
 
-lblPaidTax = Label(Cost_F,font=('arial', 14, 'bold'), text="Paid Tax", bd=7,bg="powder Blue",fg="black")
+lblPaidTax = Label(Cost_F,font=('Verdana', 13, 'bold'), text="Paid Tax", bd=7,bg="LightGray",fg="black") # Font and bg changed
 lblPaidTax.grid(row=0, column=2, sticky=W)
-txtPaidTax = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=PaidTax, bd=7, bg="White",
+txtPaidTax = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=PaidTax, bd=7, bg="AliceBlue", # bg changed
                    insertwidth=2, justify=RIGHT)
 txtPaidTax.grid(row=0, column=3)
 
-lblSubTotal = Label(Cost_F,font=('arial', 14, 'bold'), text="Sub Total", bd=7,bg="powder Blue",fg="black")
+lblSubTotal = Label(Cost_F,font=('Verdana', 13, 'bold'), text="Sub Total", bd=7,bg="LightGray",fg="black") # Font and bg changed
 lblSubTotal.grid(row=1, column=2, sticky=W)
-txtSubTotal = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=SubTotal, bd=7, bg="White",
+txtSubTotal = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=SubTotal, bd=7, bg="AliceBlue", # bg changed
                     insertwidth=2, justify=RIGHT)
 txtSubTotal.grid(row=1, column=3)
 
-lblTotalCost = Label(Cost_F,font=('arial', 14, 'bold'), text="Total Cost", bd=7, bg="powder Blue",fg="black")
+lblTotalCost = Label(Cost_F,font=('Verdana', 13, 'bold'), text="Total Cost", bd=7, bg="LightGray",fg="black") # Font and bg changed
 lblTotalCost.grid(row=2, column=2, sticky=W)
-txtTotalCost = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=TotalCost, bd=7, bg="white", insertwidth=2,
+txtTotalCost = Entry(Cost_F,font=('arial', 14, 'bold'), textvariable=TotalCost, bd=7, bg="AliceBlue", insertwidth=2, # bg changed
                      justify=RIGHT)
 txtTotalCost.grid(row=2, column=3)
 
 #====================Receipt====================
-txtReceipt = Text(Receipt_F, width=46, height=12, bg="white", bd=4,font=('arial', 12, 'bold'))
+txtReceipt = Text(Receipt_F, width=46, height=12, bg="GhostWhite", bd=4,font=('Consolas', 11, 'bold')) # Font and bg changed
 txtReceipt.grid(row=0, column=0)
 
 #====================Buttons====================
-btnTotal = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, 
-                  text="Total", command=CostofItem, bg="powder blue").grid(row=0, column=0)
-btnReceipt = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, 
-                    text="Receipt",command=Receipt, bg="powder blue").grid(row=0, column=1)
-btnReset = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, 
-                  text="Reset", command=Reset, bg="powder blue").grid(row=0, column=2)
-btnExit = Button(Buttons_F, padx=16,pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), width=4, 
-                 text="Exit", command=iExit,bg="powder blue").grid(row=0, column=3)
+btnTotal = Button(Buttons_F, padx=16,pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), width=4, # Font, fg, bg changed
+                  text="Total", command=CostofItem, bg="SteelBlue").grid(row=0, column=0)
+btnReceipt = Button(Buttons_F, padx=16,pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), width=4, # Font, fg, bg changed
+                    text="Receipt",command=Receipt, bg="SteelBlue").grid(row=0, column=1)
+btnReset = Button(Buttons_F, padx=16,pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), width=4, # Font, fg, bg changed
+                  text="Reset", command=Reset, bg="SteelBlue").grid(row=0, column=2)
+btnExit = Button(Buttons_F, padx=16,pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), width=4, # Font, fg, bg changed
+                 text="Exit", command=iExit,bg="SteelBlue").grid(row=0, column=3)
 
 #====================Calculator Display====================
-txtDisplay = Entry(Cal_F, width=45, bg="white", bd=4,font=('arial', 12, 'bold'), justify=RIGHT)
+txtDisplay = Entry(Cal_F, width=45, bg="GhostWhite", bd=4,font=('arial', 12, 'bold'), justify=RIGHT) # bg changed
 txtDisplay.grid(row=0, column=0, columnspan=4, pady=1)
 txtDisplay.insert(0, "0")
 
@@ -562,45 +562,45 @@ def btnEquals():
     text_Input.set(sumup)
     operator = ""
 
-txtDisplay = Entry(Cal_F, width=45, bg="white", bd=4, font=('arial', 12, 'bold'), justify=RIGHT, textvariable=text_Input)
+txtDisplay = Entry(Cal_F, width=45, bg="GhostWhite", bd=4, font=('arial', 12, 'bold'), justify=RIGHT, textvariable=text_Input) # bg changed
 txtDisplay.grid(row=0, column=0, columnspan=4, pady=1)
 txtDisplay.insert(0, "0")
 
 #====================Calculator Buttons====================
-btn7 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), 
-              width=4, text="7", bg="powder blue", command=lambda:btnClick(7)).grid(row=2, column=0)
-btn8 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), 
-              width=4, text="8", bg="powder blue", command=lambda:btnClick(8)).grid(row=2, column=1)
-btn9 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), 
-              width=4, text="9", bg="powder blue", command=lambda:btnClick(9)).grid(row=2, column=2)
-btnadd = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'),
-                width=4, text="+", bg="powder blue", command=lambda:btnClick("+")).grid(row=2, column=3)
+btn7 = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+              width=4, text="7", bg="SteelBlue", command=lambda:btnClick(7)).grid(row=2, column=0)
+btn8 = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+              width=4, text="8", bg="SteelBlue", command=lambda:btnClick(8)).grid(row=2, column=1)
+btn9 = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+              width=4, text="9", bg="SteelBlue", command=lambda:btnClick(9)).grid(row=2, column=2)
+btnadd = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+                width=4, text="+", bg="SteelBlue", command=lambda:btnClick("+")).grid(row=2, column=3)
 #====================Calculator Buttons====================
-btn4 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), 
-              width=4, text="4", bg="powder blue", command=lambda:btnClick(4)).grid(row=3, column=0)
-btn5 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), 
-              width=4, text="5", bg="powder blue", command=lambda:btnClick(5)).grid(row=3, column=1)
-btn6 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), 
-              width=4, text="6", bg="powder blue", command=lambda:btnClick(6)).grid(row=3, column=2)
-btnSub = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), 
-                width=4, text="-", bg="powder blue", command=lambda:btnClick("-")).grid(row=3, column=3)
+btn4 = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+              width=4, text="4", bg="SteelBlue", command=lambda:btnClick(4)).grid(row=3, column=0)
+btn5 = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+              width=4, text="5", bg="SteelBlue", command=lambda:btnClick(5)).grid(row=3, column=1)
+btn6 = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+              width=4, text="6", bg="SteelBlue", command=lambda:btnClick(6)).grid(row=3, column=2)
+btnSub = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+                width=4, text="-", bg="SteelBlue", command=lambda:btnClick("-")).grid(row=3, column=3)
 #====================Calculator Buttons====================
-btn1 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), 
-              width=4, text="1", bg="powder blue", command=lambda:btnClick(1)).grid(row=4, column=0)
-btn2 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'), 
-              width=4, text="2", bg="powder blue", command=lambda:btnClick(2)).grid(row=4, column=1)
-btn3 = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'),
-              width=4, text="3", bg="powder blue", command=lambda:btnClick(3)).grid(row=4, column=2)
-btnMulti = Button(Cal_F, padx=16, pady=1, bd=7, fg="black", font=('arial', 16, 'bold'),
-                  width=4, text="*", bg="powder blue", command=lambda:btnClick("*")).grid(row=4, column=3)
+btn1 = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+              width=4, text="1", bg="SteelBlue", command=lambda:btnClick(1)).grid(row=4, column=0)
+btn2 = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+              width=4, text="2", bg="SteelBlue", command=lambda:btnClick(2)).grid(row=4, column=1)
+btn3 = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+              width=4, text="3", bg="SteelBlue", command=lambda:btnClick(3)).grid(row=4, column=2)
+btnMulti = Button(Cal_F, padx=16, pady=1, bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+                  width=4, text="*", bg="SteelBlue", command=lambda:btnClick("*")).grid(row=4, column=3)
 #====================Calculator Buttons====================
-btn0 = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), 
-              width=4, text="0", bg="powder blue", command=lambda:btnClick(0)).grid(row=5, column=0)
-btnClear = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), 
-                  width=4, text="C", bg="powder blue", command=btnClear).grid(row=5, column=1)
-btnEquals = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'),
-                   width=4, text="=", bg="powder blue", command=btnEquals).grid(row=5, column=2)
-btnDiv = Button(Cal_F, padx=16,pady=1,bd=7, fg="black", font=('arial', 16, 'bold'), 
-                width=4, text="/", bg="powder blue", command=lambda:btnClick("/")).grid(row=5, column=3)
+btn0 = Button(Cal_F, padx=16,pady=1,bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+              width=4, text="0", bg="SteelBlue", command=lambda:btnClick(0)).grid(row=5, column=0)
+btnClear = Button(Cal_F, padx=16,pady=1,bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+                  width=4, text="C", bg="SteelBlue", command=btnClear).grid(row=5, column=1)
+btnEquals = Button(Cal_F, padx=16,pady=1,bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+                   width=4, text="=", bg="SteelBlue", command=btnEquals).grid(row=5, column=2)
+btnDiv = Button(Cal_F, padx=16,pady=1,bd=7, fg="White", font=('Verdana', 14, 'bold'), # Font, fg, bg changed
+                width=4, text="/", bg="SteelBlue", command=lambda:btnClick("/")).grid(row=5, column=3)
 
 root.mainloop()

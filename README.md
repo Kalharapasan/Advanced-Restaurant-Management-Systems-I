@@ -74,7 +74,6 @@ Make sure you have **Python 3.x** installed.
 <img width="444" height="242" alt="image" src="https://github.com/user-attachments/assets/08443e2a-d31a-430e-a314-f6608df89d0f" />
 
 
-*(Replace the above image paths with your actual screenshots)*  
 
 ---
 
@@ -83,4 +82,5 @@ Make sure you have **Python 3.x** installed.
 - Support for **inventory management**.  
 - Option to **export receipts** as PDF.  
 - Improved **UI/UX design** with modern styling.  
+
 
